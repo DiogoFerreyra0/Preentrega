@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar {
+  background-color: #b19a79;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Estilos del logo */
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-links {
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  background-color: #977e55;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Estilos del menú desplegable para dispositivos pequeños */
+.burger-menu {
+  display: none; /* Ocultar por defecto en pantallas grandes */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: #977e55;
+  margin: 5px 0;
+}
+
+/* Ajustar estilos para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Ocultar enlaces de navegación en pantallas pequeñas */
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 20px;
+  }
+
+  .nav-links.active {
+      display: flex; /* Mostrar enlaces cuando el menú está activo */
+  }
+
+  .burger-menu {
+      display: flex; /* Mostrar el ícono del menú en pantallas pequeñas */
+  }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #977e55;
+  }
+
+
+.section-inicio {
+  background-image:url(../imagenes/zara\ en\ argentina.jpg);
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.banner h1 {
+  background-color: #c0a06c;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.section-inicio2 {
+  margin: 50px;
+}
+
+.texto-section2 {
+  margin: 1rem;
+  padding: 1rem;
+  
+}
+
+
+
+.img2 {
+    width: 500px;
+    height: 400px;
+}
+
+.card-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #c0a06c;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px 30px;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .card img {
+
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  .card .price {
+    font-size: 1.25rem;
+    color: #4b4b4b;
+    margin: 0;
+  }
+  
+  .buy-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #2980b9;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* La tarjeta ocupará todo el ancho en dispositivos pequeños */
+    }
+}
+
+
+  .container {
+    max-width: 700px;
+    max-height: 700px;
+    margin: 50px auto;
+    background-color: #b19a79;
+    padding: 1rem;
+    border-radius: 9px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-form {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .button-group {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e67e22;
+  }
+
+.conocenostexto {
+    background-color: antiquewhite;
+    margin: 200px;
+    padding: 200px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+
+.titulo-historia {
+  font-size: 45px;
+}
+
+.sub-historia {
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px
+}
+
+.imgh1 , .imgh2{
+ width: 500px;
+ height: 400px;
+ border-radius: 20px;
+ margin:10px ;
+ padding: 10px;
+ position: relative;
+}
+
+.imgh1:hover {
+  transform: scale(1.1);
+}
+
+.imgh2:hover {
+  transform: scale(1.1);
+}
+
+.section-historia {
+  display: flex;
+  position: relative;
+}
+ 
+.logos-zara {
+  height: 35rem;
+  width: 100%;
+}
+ 
