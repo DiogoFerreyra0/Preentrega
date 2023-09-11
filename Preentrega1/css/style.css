@@ -20,8 +20,8 @@
 
 /* Estilos de los enlaces de navegación */
 .nav-links {
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
   list-style: none;
   display: flex;
   gap: 50px;
@@ -31,7 +31,7 @@
   text-decoration: none;
   color: #333;
   background-color: #977e55;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
 }
 
@@ -108,6 +108,13 @@ body {
   
 }
 
+.parrafo-inicio {
+  font-size: 25px;
+  
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
 
 
 .img2 {
@@ -127,6 +134,7 @@ body {
   .card {
     display: flex;
     flex-direction: column;
+    height: 350px;
     width: 300px;
     background-color: #c0a06c;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -137,11 +145,58 @@ body {
   }
   
   .card img {
-
+    max-height: 200px;
     max-width: 100%;
     border-radius: 8px;
   }
+
+  .titulo-coleccion {
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #B19A79;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .titulo-coleccion .titulo-col {
+    color: #333;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px;
+    text-align: center;
+    width: fixed;
+    height: fixed;
+  }
+
+  .frame-1 {
+  display: flex;
+  height: 450px;
+  align-items: flex-start;
+  gap: 125px;
+  flex-shrink: 0;
+  }
   
+ .flame-1 .zara {
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 10px;
+  gap: 10px;
+  padding: 10px;
+  flex-shrink: 0;
+ }
+
+ @media (max-width: 768px) {
+  
+  .zara {
+    max-width: 100%
+  }
+}
+
+
   .card h2 {
     font-size: 1.5rem;
     margin: 0;
