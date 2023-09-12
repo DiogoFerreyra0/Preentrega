@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 .navbar {
   background-color: #b19a79;
   display: flex;
@@ -12,13 +11,12 @@
   padding: 10px 20px;
 }
 
-/* Estilos del logo */
 .logo a {
   text-decoration: none;
   font-size: 24px;
 }
 
-/* Estilos de los enlaces de navegación */
+
 .nav-links {
   padding: 5px;
   margin: 5px;
@@ -26,6 +24,7 @@
   display: flex;
   gap: 50px;
 }
+
 
 .nav-links li a {
   text-decoration: none;
@@ -35,41 +34,60 @@
   border-radius: 10px;
 }
 
-/* Estilos del menú desplegable para dispositivos pequeños */
+
+#menu-toggle {
+  display: none; 
+}
+
 .burger-menu {
-  display: none; /* Ocultar por defecto en pantallas grandes */
+  position: fixed;
+  display: none; 
   flex-direction: column;
   cursor: pointer;
 }
 
+
 .line {
   width: 30px;
   height: 5px;
-  background-color: #977e55;
+  background-color: #333;
   margin: 5px 0;
 }
 
-/* Ajustar estilos para dispositivos más pequeños */
-@media (max-width: 768px) {
+
+ 
+  @media (max-width: 768px) {
   .nav-links {
-      display: none; /* Ocultar enlaces de navegación en pantallas pequeñas */
+      display: none; 
       flex-direction: column;
       background-color: #333;
       position: absolute;
-      top: 60px;
+      top: 2rem;
       left: 0;
       width: 100%;
-      padding: 10px 20px;
+      padding: 2rem 1rem;
   }
 
   .nav-links.active {
-      display: flex; /* Mostrar enlaces cuando el menú está activo */
+      display: flex;
+      width: 100%;
   }
 
   .burger-menu {
-      display: flex; /* Mostrar el ícono del menú en pantallas pequeñas */
+      display: flex; 
   }
 }
+
+  #menu-toggle:checked + .burger-menu + .navbar .nav-links {
+      display: flex; 
+  }
+
+
+
+
+
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -111,7 +129,7 @@ body {
 .parrafo-inicio {
   font-size: 25px;
   
-  letter-spacing: 1px;
+  letter-spacing: 0,5px;
   word-spacing: 1px;
 }
 
